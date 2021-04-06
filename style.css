@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+/*div {*/
+/*    border: 1px solid black;*/
+/*}*/
+
 input {
     outline: none;
 }
@@ -77,6 +81,7 @@ input {
 }
 
 .browse_button {
+    position: relative;
     border-radius: 3px 0 0 3px;
     border: 1px solid #e6e6e6;
     background-color: #cdcdcc;
@@ -126,6 +131,7 @@ details[open] > summary::after {
     padding: 20px 15px;
     border: 1px solid #e8e8e8;
     z-index: 1;
+    top: 38px;
 }
 
 .browse_menu_box:before {
@@ -136,6 +142,7 @@ details[open] > summary::after {
     background-color: #ffffff;
     position: absolute;
     top: -7px;
+    left: 67px;
     border-left: 1px solid #e8e8e8;
     border-top: 1px solid #e8e8e8;
     transform: rotate(45deg);
@@ -174,9 +181,143 @@ details[open] > summary::after {
     background-color: #ffffff;
 }
 
-.header_chart_ref {
-    margin-right: 26px;
+
+
+.chart {
+    position: relative;
     align-self: flex-end;
+}
+
+.chart:hover .chart_menu_box {
+    display: block;
+}
+
+.header_chart_ref {
+    padding: 26px;
+}
+
+.chart_container {
+    width: 225px;
+}
+
+.chart_menu_box {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px 15px;
+    border: 1px solid #e8e8e8;
+    z-index: 1;
+    top: 40px;
+    right: -184px;
+}
+
+.chart_menu_box:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    position: absolute;
+    top: -7px;
+    left: 26px;
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    transform: rotate(45deg);
+}
+
+.chart_item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
+.item_container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.chart_item:last-of-type {
+    margin-bottom: 0px;
+}
+
+.chart_item_content {
+    margin-left: 14px;
+}
+
+.chart_item_header {
+    color: #222222;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.char_item_price {
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.chart_menu_button {
+    color: #4a4a4a;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+
+    display: block;
+    text-align: center;
+    padding: 20px 0px;
+    margin-bottom: 10px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    box-sizing: border-box;
+
+}
+
+.chart_menu_button:last-of-type {
+    margin-bottom: 0px;
+}
+
+.rating {
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.delete_button {
+    display: block;
+    color: #c0c0c0;
+    font-family: "Font Awesome";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.chart_menu_button:hover {
+    background-color: #ffffff;
+    color: #f16d7f;
+    border: 1px solid #f16d7f;
+    box-sizing: border-box;
 }
 
 .header_acc_button {
@@ -193,6 +334,24 @@ details[open] > summary::after {
     letter-spacing: 0.38px;
     line-height: normal;
 
+}
+
+.chart_total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    margin-top: 19px;
+}
+
+.total_text {
+    color: #222222;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
 }
 
 .header_acc_button:hover {
