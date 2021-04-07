@@ -626,10 +626,27 @@ details[open] > summary::after {
 
 .products_header {
     text-align: center;
+
+    color: #222222;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.75px;
+    line-height: normal;
 }
 
 .products_text{
     text-align: center;
+    margin-bottom: 17px;
+
+    color: #9f9f9f;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.35px;
+    line-height: normal;
 }
 
 .products_box {
@@ -640,11 +657,42 @@ details[open] > summary::after {
     margin-bottom: 79px;
 }
 
+.product_content {
+    padding: 20px 15px;
+}
+
+.product_name {
+    margin-bottom: 17px;
+
+    color: #222222;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.product_price {
+    color: #f16d7f;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.butt_container {
+    text-align: center;
+}
+
 .products_button {
     background-color: #f16d7f;
     padding: 18px 24px;
     text-align: center;
-    margin-top: 79px;
 
     color: #ffffff;
     font-family: Lato;
@@ -664,14 +712,49 @@ details[open] > summary::after {
     position: relative;
 }
 
-.banner_content {
-    position: absolute;
-    top: 146px;
-    left: 39px;
+.banner_header {
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    line-height: normal;
+}
+
+.banner_text {
+    color: #ffffff;
+    font-family: Lato;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-style: normal;
+    letter-spacing: 0.9px;
+    line-height: normal;
+}
+
+.red_offer {
+    color: #f16d7f;
 }
 
 .features_box {
-    background-color: #222224;
+    padding-left: 111px;
+    padding-top: 55px;
+    flex-grow: 1;
+}
+
+.feature_item {
+    margin-bottom: 62px;
+    list-style: none;
+    position: relative;
+}
+
+.fe_img {
+    position: absolute;
+    top: -5px;
+    left: -78px;
+
 }
 
 .fe_item_header {
@@ -680,16 +763,30 @@ details[open] > summary::after {
     font-size: 20px;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.5px;
     line-height: normal;
+
+    margin-bottom: 17px;
 }
 
 .fe_item_text {
+    width: 219px;
+
     color: #fbfbfb;
     font-family: Lato;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: 24px;
+    letter-spacing: 0.35px;
+    line-height: normal;
+}
+
+.banner_content {
+    position: absolute;
+    top: 146px;
+    left: 39px;
+}
+
+.features_box {
+    background-color: #222224;
 }
