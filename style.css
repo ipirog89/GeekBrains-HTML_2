@@ -8,10 +8,9 @@ a {
     text-decoration: none;
 }
 
-/*div {*/
-/*    border: 1px solid black;*/
-/*}*/
-
+div {
+    border: 1px solid black;
+}
 input {
     outline: none;
 }
@@ -1124,4 +1123,50 @@ details[open] > summary::after {
 
 .foot_list_item:hover .foot_link{
     color: #f16d7f;
+}
+
+.breadcrumb {
+    height: 148px;
+    background-color: #f8f3f4;
+}
+
+.breadcrumb_flex {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.breadcrumb_header {
+    color: #f16d7f;
+    font-family: "Lato - Black";
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.breadcrumb_content {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #636363;
+    font-family: "Lato Light";
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.breadcrumb_link:last-of-type {
+    color: #f16d7f;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Lato - Bold";
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
 }
