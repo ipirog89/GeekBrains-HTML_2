@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Brand</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4de811d26a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
@@ -50,7 +51,7 @@
                     </div>
                 </details>
                 <input type="text" class="search_input" placeholder="Search for Item...">
-                <input type="submit" class="search_button" value="0">
+                <input type="submit" class="search_button fa-input" value="&#xf002">
             </form>
         </div>
         <div class="header_right">
@@ -67,11 +68,15 @@
                                     <div class="chart_item_content">
                                         <h2 class="chart_item_header">Rebox Zane</h2>
                                         <div class="rating">
-                                            <p>*****</p>
+                                            <i class="fas fa-star fa-xs"></i>
+                                            <i class="fas fa-star fa-xs"></i>
+                                            <i class="fas fa-star fa-xs"></i>
+                                            <i class="fas fa-star fa-xs"></i>
+                                            <i class="fas fa-star-half-alt fa-xs"></i>
                                         </div>
                                         <h2 class="char_item_price">1 x $250</h2>
                                     </div>
-                                    <a href="#" class="delete_button">X</a>
+                                    <a href="#" class="delete_button"><i class="fas fa-times-circle"></i></a>
                                 </div>
                             </div>
                         </a>
@@ -82,11 +87,15 @@
                                     <div class="chart_item_content">
                                         <h2 class="chart_item_header">Rebox Zane</h2>
                                         <div class="rating">
-                                            <p>*****</p>
+                                            <i class="fas fa-star fa-xs"></i>
+                                            <i class="fas fa-star fa-xs"></i>
+                                            <i class="fas fa-star fa-xs"></i>
+                                            <i class="fas fa-star fa-xs"></i>
+                                            <i class="fas fa-star-half-alt fa-xs"></i>
                                         </div>
                                         <h2 class="char_item_price">1 x $250</h2>
                                     </div>
-                                    <a href="#" class="delete_button">X</a>
+                                    <a href="#" class="delete_button"><i class="fas fa-times-circle"></i></a>
                                 </div>
                             </div>
                         </a>
@@ -99,14 +108,131 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="header_acc_button">My Account</a>
+            <a href="#" class="header_acc_button">My Account <i class="fas fa-caret-down header_acc_button__fa-caret-down"></i></a>
         </div>
     </div>
 </header>
 <nav>
     <div class="container nav_flex">
         <ul class="nav_menu">
-            <li class="nav_menu_li"><a href="#" class="nav_item">Home</a>
+            <li class="nav_menu_li">
+                <a href="#" class="nav_item">Home
+                    <div class="menu_box_arrow"></div>
+                </a>
+                <div class="drop_menu_box">
+                    <div class="drop_menu_column">
+                        <div class="drop_menu_item">
+                            <a href="#" class="drop_menu_header">Home</a>
+                            <ul class="drop_menu_list">
+                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
+                                <li><a href="#" class="drop_menu_link">Tops</a></li>
+                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
+                                <li><a href="#" class="drop_menu_link">Blazers</a></li>
+                                <li><a href="#" class="drop_menu_link">Denim</a></li>
+                                <li><a href="#" class="drop_menu_link">Leggings/Pants</a></li>
+                                <li><a href="#" class="drop_menu_link">Skirts/Shorts</a></li>
+                                <li><a href="#" class="drop_menu_link">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="drop_menu_column">
+                        <div class="drop_menu_item">
+                            <a href="#" class="drop_menu_header">Home</a>
+                            <ul class="drop_menu_list">
+                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
+                                <li><a href="#" class="drop_menu_link">Tops</a></li>
+                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop_menu_item">
+                            <a href="#" class="drop_menu_header">Home</a>
+                            <ul class="drop_menu_list">
+                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
+                                <li><a href="#" class="drop_menu_link">Tops</a></li>
+                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="drop_menu_column">
+                        <div class="drop_menu_item">
+                            <a href="#" class="drop_menu_header">Home</a>
+                            <ul class="drop_menu_list">
+                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
+                                <li><a href="#" class="drop_menu_link">Tops</a></li>
+                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="drop_menu_img">
+                            <img src="img/drop_menu_img.png" alt="super_sale.jpg">
+                            <p class="menu_img_text">Super sale!</p>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav_menu_li">
+                <a href="#" class="nav_item">Man
+                    <div class="menu_box_arrow"></div>
+                </a>
+                <div class="drop_menu_box">
+                    <div class="drop_menu_column">
+                        <div class="drop_menu_item">
+                            <a href="#" class="drop_menu_header">Man</a>
+                            <ul class="drop_menu_list">
+                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
+                                <li><a href="#" class="drop_menu_link">Tops</a></li>
+                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
+                                <li><a href="#" class="drop_menu_link">Blazers</a></li>
+                                <li><a href="#" class="drop_menu_link">Denim</a></li>
+                                <li><a href="#" class="drop_menu_link">Leggings/Pants</a></li>
+                                <li><a href="#" class="drop_menu_link">Skirts/Shorts</a></li>
+                                <li><a href="#" class="drop_menu_link">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="drop_menu_column">
+                        <div class="drop_menu_item">
+                            <a href="#" class="drop_menu_header">Man</a>
+                            <ul class="drop_menu_list">
+                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
+                                <li><a href="#" class="drop_menu_link">Tops</a></li>
+                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop_menu_item">
+                            <a href="#" class="drop_menu_header">Man</a>
+                            <ul class="drop_menu_list">
+                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
+                                <li><a href="#" class="drop_menu_link">Tops</a></li>
+                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="drop_menu_column">
+                        <div class="drop_menu_item">
+                            <a href="#" class="drop_menu_header">Man</a>
+                            <ul class="drop_menu_list">
+                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
+                                <li><a href="#" class="drop_menu_link">Tops</a></li>
+                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
+                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="drop_menu_img">
+                            <img src="img/drop_menu_img.png" alt="super_sale.jpg">
+                            <p class="menu_img_text">Super sale!</p>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav_menu_li">
+                <a href="#" class="nav_item">Woman
+                    <div class="menu_box_arrow"></div>
+                </a>
                 <div class="drop_menu_box">
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
@@ -160,11 +286,14 @@
                     </div>
                 </div>
             </li>
-            <li class="nav_menu_li"><a href="#" class="nav_item">Man</a>
+            <li class="nav_menu_li">
+                <a href="#" class="nav_item">Kids
+                <div class="menu_box_arrow"></div>
+            </a>
                 <div class="drop_menu_box">
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Kids</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -180,7 +309,7 @@
                     </div>
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Kids</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -189,7 +318,7 @@
                             </ul>
                         </div>
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Kids</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -199,7 +328,7 @@
                     </div>
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Kids</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -214,11 +343,14 @@
                     </div>
                 </div>
             </li>
-            <li class="nav_menu_li"><a href="#" class="nav_item">Woman</a>
+            <li class="nav_menu_li">
+                <a href="#" class="nav_item">Accessories
+                <div class="menu_box_arrow"></div>
+            </a>
                 <div class="drop_menu_box">
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Accessories</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -234,7 +366,7 @@
                     </div>
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Accessories</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -243,7 +375,7 @@
                             </ul>
                         </div>
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Accessories</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -253,7 +385,7 @@
                     </div>
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Accessories</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -268,11 +400,14 @@
                     </div>
                 </div>
             </li>
-            <li class="nav_menu_li"><a href="#" class="nav_item">Kids</a>
+            <li class="nav_menu_li">
+                <a href="#" class="nav_item">Featured
+                <div class="menu_box_arrow"></div>
+            </a>
                 <div class="drop_menu_box">
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Featured</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -288,7 +423,7 @@
                     </div>
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Featured</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -297,7 +432,7 @@
                             </ul>
                         </div>
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Featured</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -307,7 +442,7 @@
                     </div>
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Featured</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -322,11 +457,14 @@
                     </div>
                 </div>
             </li>
-            <li class="nav_menu_li"><a href="#" class="nav_item">Accessories</a>
+            <li class="nav_menu_li">
+                <a href="#" class="nav_item">Hot deals
+                <div class="menu_box_arrow"></div>
+            </a>
                 <div class="drop_menu_box">
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Hot deals</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -342,7 +480,7 @@
                     </div>
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Hot deals</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -351,7 +489,7 @@
                             </ul>
                         </div>
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Hot deals</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -361,115 +499,7 @@
                     </div>
                     <div class="drop_menu_column">
                         <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
-                            <ul class="drop_menu_list">
-                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
-                                <li><a href="#" class="drop_menu_link">Tops</a></li>
-                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
-                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
-                            </ul>
-                        </div>
-                        <a href="#" class="drop_menu_img">
-                            <img src="img/drop_menu_img.png" alt="super_sale.jpg">
-                            <p class="menu_img_text">Super sale!</p>
-                        </a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav_menu_li"><a href="#" class="nav_item">Featured</a>
-                <div class="drop_menu_box">
-                    <div class="drop_menu_column">
-                        <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
-                            <ul class="drop_menu_list">
-                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
-                                <li><a href="#" class="drop_menu_link">Tops</a></li>
-                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
-                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
-                                <li><a href="#" class="drop_menu_link">Blazers</a></li>
-                                <li><a href="#" class="drop_menu_link">Denim</a></li>
-                                <li><a href="#" class="drop_menu_link">Leggings/Pants</a></li>
-                                <li><a href="#" class="drop_menu_link">Skirts/Shorts</a></li>
-                                <li><a href="#" class="drop_menu_link">Accessories</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="drop_menu_column">
-                        <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
-                            <ul class="drop_menu_list">
-                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
-                                <li><a href="#" class="drop_menu_link">Tops</a></li>
-                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
-                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
-                            <ul class="drop_menu_list">
-                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
-                                <li><a href="#" class="drop_menu_link">Tops</a></li>
-                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="drop_menu_column">
-                        <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
-                            <ul class="drop_menu_list">
-                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
-                                <li><a href="#" class="drop_menu_link">Tops</a></li>
-                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
-                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
-                            </ul>
-                        </div>
-                        <a href="#" class="drop_menu_img">
-                            <img src="img/drop_menu_img.png" alt="super_sale.jpg">
-                            <p class="menu_img_text">Super sale!</p>
-                        </a>
-                    </div>
-                </div>
-            </li>
-            <li class="nav_menu_li"><a href="#" class="nav_item">Hot deals</a>
-                <div class="drop_menu_box">
-                    <div class="drop_menu_column">
-                        <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
-                            <ul class="drop_menu_list">
-                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
-                                <li><a href="#" class="drop_menu_link">Tops</a></li>
-                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
-                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
-                                <li><a href="#" class="drop_menu_link">Blazers</a></li>
-                                <li><a href="#" class="drop_menu_link">Denim</a></li>
-                                <li><a href="#" class="drop_menu_link">Leggings/Pants</a></li>
-                                <li><a href="#" class="drop_menu_link">Skirts/Shorts</a></li>
-                                <li><a href="#" class="drop_menu_link">Accessories</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="drop_menu_column">
-                        <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
-                            <ul class="drop_menu_list">
-                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
-                                <li><a href="#" class="drop_menu_link">Tops</a></li>
-                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
-                                <li><a href="#" class="drop_menu_link">Jackets/Coats</a></li>
-                            </ul>
-                        </div>
-                        <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
-                            <ul class="drop_menu_list">
-                                <li><a href="#" class="drop_menu_link">Dresses</a></li>
-                                <li><a href="#" class="drop_menu_link">Tops</a></li>
-                                <li><a href="#" class="drop_menu_link">Sweaters/Knits</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="drop_menu_column">
-                        <div class="drop_menu_item">
-                            <a href="#" class="drop_menu_header">Women</a>
+                            <a href="#" class="drop_menu_header">Hot deals</a>
                             <ul class="drop_menu_list">
                                 <li><a href="#" class="drop_menu_link">Dresses</a></li>
                                 <li><a href="#" class="drop_menu_link">Tops</a></li>
@@ -551,6 +581,7 @@
                         <div class="add_flex">
                             <div class="add_product">
                                 <img src="img/add_chart_img.svg" class="add_chart_svg" alt="chart_icon">
+                                <img src="img/add_chart_img_red.svg" class="add_chart_svg_red" alt="chart_icon">
                                 <p class="add_chart_text">Add to Cart</p>
                             </div>
                         </div>
@@ -568,6 +599,7 @@
                         <div class="add_flex">
                             <div class="add_product">
                                 <img src="img/add_chart_img.svg" class="add_chart_svg" alt="chart_icon">
+                                <img src="img/add_chart_img_red.svg" class="add_chart_svg_red" alt="chart_icon">
                                 <p class="add_chart_text">Add to Cart</p>
                             </div>
                         </div>
@@ -585,6 +617,7 @@
                         <div class="add_flex">
                             <div class="add_product">
                                 <img src="img/add_chart_img.svg" class="add_chart_svg" alt="chart_icon">
+                                <img src="img/add_chart_img_red.svg" class="add_chart_svg_red" alt="chart_icon">
                                 <p class="add_chart_text">Add to Cart</p>
                             </div>
                         </div>
@@ -602,6 +635,7 @@
                         <div class="add_flex">
                             <div class="add_product">
                                 <img src="img/add_chart_img.svg" class="add_chart_svg" alt="chart_icon">
+                                <img src="img/add_chart_img_red.svg" class="add_chart_svg_red" alt="chart_icon">
                                 <p class="add_chart_text">Add to Cart</p>
                             </div>
                         </div>
@@ -619,6 +653,7 @@
                         <div class="add_flex">
                             <div class="add_product">
                                 <img src="img/add_chart_img.svg" class="add_chart_svg" alt="chart_icon">
+                                <img src="img/add_chart_img_red.svg" class="add_chart_svg_red" alt="chart_icon">
                                 <p class="add_chart_text">Add to Cart</p>
                             </div>
                         </div>
@@ -636,6 +671,7 @@
                         <div class="add_flex">
                             <div class="add_product">
                                 <img src="img/add_chart_img.svg" class="add_chart_svg" alt="chart_icon">
+                                <img src="img/add_chart_img_red.svg" class="add_chart_svg_red" alt="chart_icon">
                                 <p class="add_chart_text">Add to Cart</p>
                             </div>
                         </div>
@@ -653,6 +689,7 @@
                         <div class="add_flex">
                             <div class="add_product">
                                 <img src="img/add_chart_img.svg" class="add_chart_svg" alt="chart_icon">
+                                <img src="img/add_chart_img_red.svg" class="add_chart_svg_red" alt="chart_icon">
                                 <p class="add_chart_text">Add to Cart</p>
                             </div>
                         </div>
@@ -670,6 +707,7 @@
                         <div class="add_flex">
                             <div class="add_product">
                                 <img src="img/add_chart_img.svg" class="add_chart_svg" alt="chart_icon">
+                                <img src="img/add_chart_img_red.svg" class="add_chart_svg_red" alt="chart_icon">
                                 <p class="add_chart_text">Add to Cart</p>
                             </div>
                         </div>
@@ -678,7 +716,7 @@
             </a>
         </div>
         <div class="butt_container">
-            <a href="#" class="products_button">Browse All Product -></a>
+            <a href="#" class="products_button">Browse All Product <i class="fas fa-long-arrow-alt-right"></i></a>
         </div>
     </div>
 </section>
@@ -714,7 +752,6 @@
     </div>
 </section>
 <section class="subscribe">
-    <div class="container_1618">
         <div class="container subscribe_flex">
             <div class="subscribe_left">
                 <div class="feedback">
@@ -743,7 +780,6 @@
                 </form>
             </div>
         </div>
-    </div>
 </section>
 <footer class="footer">
     <div class="footer_top">
@@ -828,7 +864,11 @@
         <div class="container footer_flex_bottom">
             <p class="copywrite"> &copy; 2017  Brand  All Rights Reserved.</p>
             <nav class="social_icons">
-
+                <a href="https://www.facebook.com/" class="soc_link facebook_link"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://twitter.com/?lang=ru" class="soc_link twitter_link"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="https://www.instagram.com/?hl=ru" class="soc_link instagram_link"><i class="fab fa-instagram-square fa-2x"></i></a>
+                <a href="https://www.pinterest.ru/" class="soc_link pinterest_link"><i class="fab fa-pinterest-square fa-2x"></i></a>
+                <a href="https://www.gmail.com/" class="soc_link g+_link"><i class="fab fa-google-plus-square fa-2x"></i></a>
             </nav>
         </div>
     </div>
