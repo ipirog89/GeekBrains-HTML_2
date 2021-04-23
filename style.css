@@ -16,6 +16,18 @@ input {
     outline: none;
 }
 
+details summary {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -832,6 +844,7 @@ details[open] > .browse_button_text::after {
     background-color: #f16d7f;
     padding: 18px 24px;
     text-align: center;
+    border: 1px solid transparent;
 
     color: #ffffff;
     font-family: Lato;
@@ -1568,4 +1581,219 @@ details[open] > .browse_button_text::after {
     color: #bcbcbc;
     font-weight: 900;
 
+}
+
+.product-content-flex {
+    display: flex;
+    margin-top: 59px;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 243px;
+}
+
+.sidebar-item {
+    margin-bottom: 18px;
+}
+
+.sidebar-item summary {
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    padding: 11px 12px;
+    position: relative;
+
+    border-bottom: 1px solid #ebebeb;
+    border-left: 5px solid #ef5b70;
+}
+
+.sidebar-summary::-webkit-details-marker {
+    color: blue;
+}
+
+.sidebar-item:hover .sidebar-summary {
+    color: #ef5b70;
+}
+.sidebar-item:hover .sidebar-summary::after {
+    color: #ef5b70;
+}
+
+.sidebar-summary::after{
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    color: #6f6e6e;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+
+}
+
+.sidebar-item[open] > .sidebar-summary::after {
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+    color: #ef5b70;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+}
+
+.sidebar-item[open] > .sidebar-summary {
+    color: #ef5b70;
+}
+
+.sidebar-link a {
+    display: block;
+
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 33px;
+}
+
+.sidebar-link:hover a {
+    color: #ef5b70;
+}
+
+.sidebar-menu {
+    padding-top: 22px;
+    padding-left: 22px;
+}
+
+.main-box {
+    width: 864px;
+}
+
+.filter-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-item {
+    width: 262px;
+}
+
+.filter-header {
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.row-flex {
+    display: flex;
+    align-items: center;
+}
+
+.form-trendings a {
+    display: block;
+    color: #6f6e6e;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.form-trendings a:hover {
+    color: #ef5b70
+}
+
+.row-flex a:after {
+    content: "|";
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 26px;
+    color: #dfdfdf;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.row-flex a:last-of-type:after {
+    display: none;
+}
+
+.size-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.size-container:hover .size-label
+{
+    color: #ef5b70 ;
+}
+
+.size-checkbox {
+    display: block;
+    cursor: pointer;
+    margin-right: 56px;
+}
+
+.size-label {
+    position: absolute;
+    color: #6f6e6e;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    left: 22px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.price-range-high{
+    /*position: absolute;*/
+    left: 15px;
+}
+
+prod-features {
+    height: 340px;
+    margin-bottom: 0px;
+}
+
+.prod-feature-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prod-fe-item {
+    align-self: center;
+    text-align: center;
+}
+
+.prod-fe-item p {
+    width: 308px;
+}
+
+.prod-fe_img {
+    position: unset;
+    align-self: center;
+    margin-bottom: 32px;
 }
